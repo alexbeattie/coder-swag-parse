@@ -25,10 +25,11 @@ class CategoriesVC: UIViewController, UITableViewDataSource,UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
-            
-//            let category = DataService.instance.getCategories()[indexPath.row] - The DATASERVICE is the Array
-            let categories = DataService.instance.getCategories()
-            let category = categories[indexPath.row]
+
+//            - The DATASERVICE is the Array
+            let category = DataService.instance.getCategories()[indexPath.row]
+//            let categories = DataService.instance.getCategories()
+//            let category = categories[indexPath.row]
             cell.updateViews(category: category)
             
             return cell
@@ -39,9 +40,21 @@ class CategoriesVC: UIViewController, UITableViewDataSource,UITableViewDelegate 
     
         
     }
-
-    
-
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+//            assert(sender as? Category !=nil)
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            productsVC.initProdcuts(category: sender as! Category)
+           
+        }
+    }
 }
 
