@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8EF849CC1F2A3F0F0055ADCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849CB1F2A3F0F0055ADCC /* AppDelegate.swift */; };
-		8EF849CE1F2A3F0F0055ADCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849CD1F2A3F0F0055ADCC /* ViewController.swift */; };
+		8EF849CE1F2A3F0F0055ADCC /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849CD1F2A3F0F0055ADCC /* CategoriesVC.swift */; };
 		8EF849D11F2A3F0F0055ADCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF849CF1F2A3F0F0055ADCC /* Main.storyboard */; };
 		8EF849D31F2A3F0F0055ADCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF849D21F2A3F0F0055ADCC /* Assets.xcassets */; };
 		8EF849D61F2A3F0F0055ADCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF849D41F2A3F0F0055ADCC /* LaunchScreen.storyboard */; };
+		8EF849E11F2A457D0055ADCC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849E01F2A457D0055ADCC /* CategoryCell.swift */; };
+		8EF849E31F2A47E40055ADCC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849E21F2A47E40055ADCC /* Category.swift */; };
+		8EF849E71F2A49BF0055ADCC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849E61F2A49BF0055ADCC /* DataService.swift */; };
+		8EF849E91F2A64960055ADCC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849E81F2A64960055ADCC /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8EF849C81F2A3F0F0055ADCC /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF849CB1F2A3F0F0055ADCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EF849CD1F2A3F0F0055ADCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EF849CD1F2A3F0F0055ADCC /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		8EF849D01F2A3F0F0055ADCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EF849D21F2A3F0F0055ADCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF849D51F2A3F0F0055ADCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EF849D71F2A3F0F0055ADCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF849E01F2A457D0055ADCC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		8EF849E21F2A47E40055ADCC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8EF849E61F2A49BF0055ADCC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8EF849E81F2A64960055ADCC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		8EF849CA1F2A3F0F0055ADCC /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				8EF849E51F2A49AD0055ADCC /* Services */,
+				8EF849DF1F2A454C0055ADCC /* View */,
+				8EF849DE1F2A450D0055ADCC /* Model */,
+				8EF849DD1F2A45020055ADCC /* Controller */,
 				8EF849CB1F2A3F0F0055ADCC /* AppDelegate.swift */,
-				8EF849CD1F2A3F0F0055ADCC /* ViewController.swift */,
 				8EF849CF1F2A3F0F0055ADCC /* Main.storyboard */,
 				8EF849D21F2A3F0F0055ADCC /* Assets.xcassets */,
 				8EF849D41F2A3F0F0055ADCC /* LaunchScreen.storyboard */,
 				8EF849D71F2A3F0F0055ADCC /* Info.plist */,
 			);
 			path = "coder-swag";
+			sourceTree = "<group>";
+		};
+		8EF849DD1F2A45020055ADCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EF849CD1F2A3F0F0055ADCC /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EF849DE1F2A450D0055ADCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EF849E21F2A47E40055ADCC /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EF849DF1F2A454C0055ADCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF849E01F2A457D0055ADCC /* CategoryCell.swift */,
+				8EF849E81F2A64960055ADCC /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF849E51F2A49AD0055ADCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8EF849E61F2A49BF0055ADCC /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF849CE1F2A3F0F0055ADCC /* ViewController.swift in Sources */,
+				8EF849CE1F2A3F0F0055ADCC /* CategoriesVC.swift in Sources */,
 				8EF849CC1F2A3F0F0055ADCC /* AppDelegate.swift in Sources */,
+				8EF849E11F2A457D0055ADCC /* CategoryCell.swift in Sources */,
+				8EF849E91F2A64960055ADCC /* ProductCell.swift in Sources */,
+				8EF849E31F2A47E40055ADCC /* Category.swift in Sources */,
+				8EF849E71F2A49BF0055ADCC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LR4SP9C264;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artisanbranding.com.coder-swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LR4SP9C264;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artisanbranding.com.coder-swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
