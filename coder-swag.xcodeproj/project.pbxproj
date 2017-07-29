@@ -18,9 +18,12 @@
 		8EF849E91F2A64960055ADCC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849E81F2A64960055ADCC /* ProductCell.swift */; };
 		8EF849EB1F2A87D20055ADCC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849EA1F2A87D20055ADCC /* Product.swift */; };
 		8EF849ED1F2A92180055ADCC /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF849EC1F2A92180055ADCC /* ProductsVC.swift */; };
+		D75AA88BCA4E29967FAE5807 /* Pods_coder_swag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D3E2D17498AE463057E7C2 /* Pods_coder_swag.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		055536F80D0299E4ABDC288B /* Pods-coder-swag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coder-swag.release.xcconfig"; path = "Pods/Target Support Files/Pods-coder-swag/Pods-coder-swag.release.xcconfig"; sourceTree = "<group>"; };
+		61D3E2D17498AE463057E7C2 /* Pods_coder_swag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coder_swag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF849C81F2A3F0F0055ADCC /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF849CB1F2A3F0F0055ADCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF849CD1F2A3F0F0055ADCC /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		8EF849E81F2A64960055ADCC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		8EF849EA1F2A87D20055ADCC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8EF849EC1F2A92180055ADCC /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		FCBF5C2AB87AB0B02191CC1D /* Pods-coder-swag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coder-swag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-coder-swag/Pods-coder-swag.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75AA88BCA4E29967FAE5807 /* Pods_coder_swag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				8EF849CA1F2A3F0F0055ADCC /* coder-swag */,
 				8EF849C91F2A3F0F0055ADCC /* Products */,
+				DF3A52BC4E9FE02C66248643 /* Pods */,
+				A8CDEB0837170AD731AD4CC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +121,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		A8CDEB0837170AD731AD4CC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D3E2D17498AE463057E7C2 /* Pods_coder_swag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3A52BC4E9FE02C66248643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF5C2AB87AB0B02191CC1D /* Pods-coder-swag.debug.xcconfig */,
+				055536F80D0299E4ABDC288B /* Pods-coder-swag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF849DA1F2A3F0F0055ADCC /* Build configuration list for PBXNativeTarget "coder-swag" */;
 			buildPhases = (
+				2779EA5227A3A29A13B06A62 /* [CP] Check Pods Manifest.lock */,
 				8EF849C41F2A3F0F0055ADCC /* Sources */,
 				8EF849C51F2A3F0F0055ADCC /* Frameworks */,
 				8EF849C61F2A3F0F0055ADCC /* Resources */,
+				595F466AEBDD43772C2FF772 /* [CP] Embed Pods Frameworks */,
+				41FBDB51671CE42A6E817884 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +206,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2779EA5227A3A29A13B06A62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41FBDB51671CE42A6E817884 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-coder-swag/Pods-coder-swag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595F466AEBDD43772C2FF772 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-coder-swag/Pods-coder-swag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EF849C41F2A3F0F0055ADCC /* Sources */ = {
@@ -327,6 +402,7 @@
 		};
 		8EF849DB1F2A3F0F0055ADCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBF5C2AB87AB0B02191CC1D /* Pods-coder-swag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LR4SP9C264;
@@ -342,6 +418,7 @@
 		};
 		8EF849DC1F2A3F0F0055ADCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 055536F80D0299E4ABDC288B /* Pods-coder-swag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LR4SP9C264;

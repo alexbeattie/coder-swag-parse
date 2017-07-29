@@ -1,0 +1,6 @@
+framework module Pods_coder_swag {
+  umbrella header "Pods-coder-swag-umbrella.h"
+
+  export *
+  module * { export * }
+}
